@@ -26,9 +26,9 @@ var findMin = function (nums) {
   let l = 0;
   let r = nums.length - 1;
 
-  if (nums[l] <= nums[r]) {
-    return nums[l];
-  }
+  // if (nums[l] <= nums[r]) {
+  //   return nums[l];
+  // }
 
   while (l <= r) {
     let m = l + Math.floor((r - l) / 2);
