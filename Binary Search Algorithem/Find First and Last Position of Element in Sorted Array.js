@@ -39,7 +39,7 @@ var searchRange = function (nums, target) {
     }
   }
 
-  if (nums[l] === target) last = r;
+  if (nums[r] === target) last = r;
 
   return [first, last];
 };
