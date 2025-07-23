@@ -6,19 +6,22 @@
  */
 var findClosestElements = function (arr, k, x) {
   let l = 0;
-  let r = arr.length - k;
+  let r = arr.length - 1;
+
   while (l < r) {
     let m = l + Math.floor((r - l) / 2);
-    console.log(m);
+
     if (arr[m + k] - x < x - arr[m]) {
       l = m + 1;
     } else {
       r = m;
     }
   }
-  let ans = [];
-  for (let i = l; i < l + k; i++) {
-    ans.push(arr[i]);
-  }
-  return ans;
+  // let ans = [];
+  // for (let i = l; i < l + k; i++) {
+  //     ans.push(arr[i]);
+  // }
+  // return ans;
+
+  return arr.slice(l, l + k);
 };
