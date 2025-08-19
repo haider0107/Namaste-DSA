@@ -18,3 +18,6 @@ var searchBST = function (root, val) {
     ? searchBST(root.left, val)
     : searchBST(root.right, val);
 };
+
+
+
