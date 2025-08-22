@@ -6,6 +6,9 @@
  *     this.right = (right===undefined ? null : right)
  * }
  */
+
+
+
 /**
  * @param {TreeNode} root
  * @param {number} val
@@ -18,6 +21,10 @@ var searchBST = function (root, val) {
     ? searchBST(root.left, val)
     : searchBST(root.right, val);
 };
+
+
+
+
 
 
 
