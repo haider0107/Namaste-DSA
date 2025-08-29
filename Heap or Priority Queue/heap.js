@@ -44,10 +44,49 @@ class MinHeap {
       }
     }
   }
+
+  extract() {
+    this.heap[0] = this.heap.at(-1);
+    this.heap.pop();
+
+    this.heapifyDown(0);
+  }
+
+  heapifyDown(index) {
+    let leftIndex = this.getLeftChildIndex(index);
+    let rightIndex = this.getRightChildIndex(index);
+
+    let heapLen = this.heap.length;
+
+    let smallest = index;
+
+    if (leftIndex < heapLen && this.heap[leftIndex] < this.heap[smallest]) {
+      smallest = leftIndex;
+    }
+
+    if (rightIndex < heapLen && this.heap[rightIndex] < this.heap[smallest]) {
+      smallest = rightIndex;
+    }
+
+    if (smallest != index) {
+      [this.heap[smallest], this.heap[index]] = [
+        this.heap[index],
+        this.heap[smallest],
+      ];
+
+      this.heapifyDown(smallest);
+    }
+  }
 }
 
 let heap = new MinHeap();
 
 heap.insert(1);
+
+console.log(heap.heap);
+
+heap.extract();
+
+// heap.extract();
 
 console.log(heap.heap);
