@@ -23,5 +23,5 @@ var kthSmallest = function (matrix, k) {
     }
   }
 
-  return pq.front()
+  return pq.front();
 };
