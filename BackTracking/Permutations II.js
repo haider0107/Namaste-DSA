@@ -6,10 +6,6 @@ var permuteUnique = function (arr) {
   let res = [];
   arr.sort((a, b) => a - b);
 
-
-
-
-  
   function bt(path, choices) {
     if (path.length === arr.length) {
       res.push([...path]);
