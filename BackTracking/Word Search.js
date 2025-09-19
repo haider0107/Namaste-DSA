@@ -42,3 +42,6 @@ var exist = function (board, word) {
 
   return res;
 };
+
+
+
