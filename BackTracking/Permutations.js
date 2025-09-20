@@ -18,6 +18,9 @@ var permute = function (nums) {
     }
   }
 
+
+
+  
   bt([]);
 
   return res;
