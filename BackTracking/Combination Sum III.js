@@ -4,11 +4,11 @@
  * @return {number[][]}
  */
 var combinationSum3 = function (k, n) {
-  let res = [];
+  let ans = [];
 
   function bt(path, diff, start) {
     if (path.length === k && diff === 0) {
-      res.push([...path]);
+      ans.push([...path]);
       return;
     }
     if (path.length >= k || diff < 0) return;
@@ -21,5 +21,5 @@ var combinationSum3 = function (k, n) {
   }
   bt([], n, 1);
 
-  return res;
+  return ans;
 };
