@@ -42,3 +42,29 @@ var partitionLabels = function (s) {
     })
 };
 */
+
+/**
+ * @param {string} s
+ * @return {number[]}
+ */
+var partitionLabels = function (s) {
+  let last = {};
+  let ans = [];
+
+  for (let i = 0; i < s.length; i++) {
+    last[s[i]] = i;
+  }
+
+  let start = (end = 0);
+
+  for (let i = 0; i < s.length; i++) {
+    end = Math.max(end, last[s[i]]);
+
+    if (end === i) {
+      ans.push(end - start + 1);
+      start = i + 1;
+    }
+  }
+
+  return ans;
+};
