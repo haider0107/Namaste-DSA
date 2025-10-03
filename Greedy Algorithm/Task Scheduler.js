@@ -20,6 +20,8 @@ var leastInterval = function (tasks, n) {
 
   let maxFreqletters = 0;
 
+
+  
   for (let ele in map) {
     if (map[ele] === maxFreq) maxFreqletters++;
   }
