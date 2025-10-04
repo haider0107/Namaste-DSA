@@ -21,6 +21,8 @@ var insert = function (arr, x) {
   }
   ans.push(x);
 
+  
+
   while (i < n) {
     ans.push(arr[i]);
     i++;
