@@ -16,9 +16,6 @@ var coinChange = function (coins, amount) {
         dp[i] = Math.min(dp[i], 1 + dp[remAmt]);
       }
     }
-
-
-    
   }
 
   return dp[amount] === Infinity ? -1 : dp[amount];
