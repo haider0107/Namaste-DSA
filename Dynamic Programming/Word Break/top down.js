@@ -14,6 +14,8 @@ var wordBreak = function (s, wordDict) {
       if (wordDict.includes(substr) && fn(remS.substring(i + 1))) {
         res = true;
       }
+
+      
     }
     return (dp[remS] = res);
   };
