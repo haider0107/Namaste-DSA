@@ -24,7 +24,7 @@ var canPartition = function (nums) {
 
     if (btSum < 0) return false;
 
-    // let key = btSum + "-" + start
+    let key = btSum + "-" + start
 
     if (dp[btSum][start] !== undefined) return [btSum][start];
 
