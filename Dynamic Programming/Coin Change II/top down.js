@@ -14,7 +14,7 @@ var change = function (amount, coins) {
     if (remS < 0) return 0;
 
     if (dp[remS][start] !== -1) {
-      // console.log(`dp[${remS}][${start}] = ${dp[remS][start]}`)
+      console.log(`dp[${remS}][${start}] = ${dp[remS][start]}`)
       return dp[remS][start];
     }
 
@@ -23,7 +23,7 @@ var change = function (amount, coins) {
       count += fn(i, remS - coins[i]);
     }
 
-    // console.log(`dp[${remS}][${start}] = ${count}`)
+    console.log(`dp[${remS}][${start}] = ${count}`)
 
     return (dp[remS][start] = count);
   }
