@@ -5,7 +5,6 @@
  */
 var uniquePaths = function (m, n) {
   let dp = Array.from({ length: m }, () => new Array(n).fill(-1));
-
   function fn(x, y) {
     if (x === 0 && y === 0) {
       return 1;
