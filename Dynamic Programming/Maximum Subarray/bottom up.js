@@ -11,6 +11,7 @@ var maxSubArray = function (nums) {
     if (currSum < 0) {
       currSum = 0;
     }
+    
 
     currSum += nums[i];
 
