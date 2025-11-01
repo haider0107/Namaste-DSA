@@ -25,7 +25,7 @@ var merge = function (arr) {
     }
     //[ [ 0, 2 ], [ 1, 4 ], [ 3, 5 ] ]
 
-    return ans
+    // return ans
     */
 
   // Course solution
