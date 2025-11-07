@@ -22,6 +22,8 @@ var merge = function (arr) {
         ans.push(temp)
         i = j
         j++
+
+        
     }
     //[ [ 0, 2 ], [ 1, 4 ], [ 3, 5 ] ]
 
