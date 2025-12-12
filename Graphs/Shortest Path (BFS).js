@@ -15,6 +15,7 @@ function shortestPath(src, graph) {
         path.push(node);
 
         paths[node] = path;
+        
         q.push(node);
       }
     }
