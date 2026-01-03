@@ -59,7 +59,7 @@ class MinPriorityQueue {
     let i = this.heap.length - 1;
     while (i > 0) {
       let parent = Math.floor((i - 1) / 2);
-      if (this.heap[parent][1] > this.heap[i]) {
+      if (this.heap[parent][1] > this.heap[i][1]) {
         this.swap(parent, i);
         i = parent;
       } else break;
