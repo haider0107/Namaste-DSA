@@ -133,3 +133,7 @@ const graph = [
 ];
 
 console.log(primMST(6, graph));
+
+
+// Time Complexity: O(E * log(V))
+// Space Complexity: O(V)
