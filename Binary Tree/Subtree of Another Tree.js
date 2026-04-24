@@ -23,7 +23,6 @@ var isSubtree = function (root, subRoot) {
 
 function serilize(root) {
   let hash = "";
-
   function traversal(node) {
     if (!node) {
       hash += "-#";
